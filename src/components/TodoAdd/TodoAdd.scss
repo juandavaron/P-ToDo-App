@@ -1,0 +1,46 @@
+@import '../../index.scss';
+
+.add {
+  margin: 1rem 0;
+  box-shadow: $Box-Shadow;
+
+  &__form {
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    outline: 2px solid $Dark-Grayish-Blue;
+    border-radius: 1rem;
+    height: 1rem;
+    width: 1rem;
+    margin: 1rem 1rem;
+
+    &:hover{
+      background-image: $Check-Background;
+      border: 1px solid red;
+    }
+
+    &:hover::after{
+      // outline: 1px solid $Check-Background;
+      // background: rgb(192, 88, 249);
+      // background: linear-gradient(330deg, rgba(192, 88, 249, 1) 0%, rgba(87, 221, 255, 1) 100%);
+      // border-radius: 1rem;
+      // border: 5px solid;
+      // border-image-slice: 1;
+      // border-width: 2px;
+      // border-image-source: linear-gradient(330deg, rgba(192, 88, 249, 1) 0%, rgba(87, 221, 255, 1) 100%);
+    }
+  }
+
+  &__input {
+    width: 80%;
+    background: none;
+    outline: none;
+    border: none;
+    margin: 1rem .25rem 1rem .25rem;
+    color: $Light-Grayish-Blue;
+    font-family: $Font-Family;
+    font-size: 18px;
+  }
+}

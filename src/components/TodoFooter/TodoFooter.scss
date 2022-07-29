@@ -1,0 +1,9 @@
+@import '../../index.scss';
+
+.footer{
+  padding: .5rem;
+  margin: .5rem 0;
+  &__text{
+    text-align: center;
+  }
+}

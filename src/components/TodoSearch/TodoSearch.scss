@@ -1,0 +1,27 @@
+@import '../../index.scss';
+
+.search {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 3rem;
+  font-size: .75rem;
+
+  & p{
+    color: $Grayish-Blue;
+  }
+
+  &__filter {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+
+    & > p{
+      color: $Bright-Blue;
+    }
+  }
+
+  &__cleaner{
+
+  }
+}

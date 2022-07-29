@@ -1,0 +1,31 @@
+@import '../../index.scss';
+
+.list {
+  box-shadow: $Box-Shadow;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $Grayish-Blue;
+  }
+
+  &__button-done,
+  &__button-delete {
+    cursor: pointer;
+    margin: 1rem;
+    color: $Light-Grayish-Blue-hover;
+  }
+
+  &__button-done{
+    height: 1rem;
+    width: 1rem;
+    border-radius: 2rem;
+    outline: 2px solid $Dark-Grayish-Blue;
+  }
+
+  &__copy{
+    width: 80%;
+    cursor: pointer;
+  }
+}

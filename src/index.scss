@@ -1,0 +1,24 @@
+// Variables
+//  Font
+$Font-Family: 'Josefin Sans', sans-serif;
+$Weight-Regular: 400;
+$Weight-Bold: 700;
+// Color Primary
+$Bright-Blue: hsl(220, 98%, 61%);
+$Check-Background: linear-gradient(330deg, rgba(192, 88, 249, 1) 0%, rgba(87, 221, 255, 1) 100%);
+
+// Color Theme
+$Very-Dark-Blue: hsl(235, 21%, 11%);
+$Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+$Light-Grayish-Blue: hsl(234, 39%, 85%);
+$Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
+$Grayish-Blue: hsl(234, 11%, 52%);
+$Dark-Grayish-Blue: hsl(233, 14%, 35%);
+$Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+
+// Box Shadow
+$Box-Shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
+
+// BreakPoint
+$Mobile: 375px;
+$Desktop: 1440px;

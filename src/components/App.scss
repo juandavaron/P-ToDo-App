@@ -1,0 +1,66 @@
+@import '../index.scss';
+
+//  Base
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: $Font-Family;
+  background-color: $Very-Dark-Desaturated-Blue;
+  // background: $Very-Dark-Desaturated-Blue url('./../public/images/bg-mobile-dark.jpg') no-repeat;
+  // background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+image {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  color: $Light-Grayish-Blue-hover;
+  font-weight: $Weight-Bold;
+  letter-spacing: .75rem;
+}
+
+p {
+  color: white;
+}
+
+ul{
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+#root {
+  height: auto;
+  margin: 2rem 2rem;
+}
+
+.section {
+  background-color: $Very-Dark-Grayish-Blue;
+  border-radius: .25rem;
+  // padding: 1rem 0;
+}
+
+.complete{
+  text-decoration: line-through;
+  color: $Grayish-Blue;
+}
