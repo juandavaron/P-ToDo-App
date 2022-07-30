@@ -2,28 +2,21 @@ import React from "react";
 // import './TodoItem.scss'
 import { TodoIcon } from "../TodoIcon/TodoIcon";
 
-function TodoItem({ text, completed }) {
-  const onComplete = () => {
-    alert('Completado el ToDo ' + text);
-  };
-
-  const onDelete = () => {
-    alert('Elminado el ToDo ' + text);
-  };
-
+function TodoItem({ text, completed, completedTodo, deletedTodo }) {
 
   return (
     <li className="list__item">
       <TodoIcon
         type={'done'}
-        onComplete={onComplete}
+        completed={completed}
+        completedTodo={completedTodo}
       />
       <p
-        className={`list__copy ${ completed && 'complete'}`}
+        className={`list__copy ${completed && 'complete'}`}
       >{text} </p>
       <TodoIcon
         type={'delete'}
-        onDelete={onDelete}
+        deletedTodo={deletedTodo}
       />
     </li>
   )

@@ -11,7 +11,7 @@ const defaultTodos = [
   { text: 'Crear App', completed: false },
   { text: 'Mostrar al mundo', completed: false },
   { text: 'Comer', completed: true },
-  { text: 'LALALALAA', completed: false }
+  { text: 'LALALAND', completed: false }
 ]
 
 function App() {
@@ -19,42 +19,48 @@ function App() {
   const [todos, setTodos] = React.useState(defaultTodos);
 
   // Completar ToDos
-  const completeTodo = () =>{
-
-  }
+  const completeTodo = (text) => {
+    const indexTodo = todos.findIndex(todo => todo.text === text)
+    const newTodos = [...todos];
+    newTodos[indexTodo].completed = true;
+    setTodos(newTodos);
+  };
 
   // Eliminar ToDos
+  const deleteTodo = (text) => {
+    const indexTodo = todos.findIndex(todo => todo.text === text)
+    const newTodos = [...todos];
+    newTodos.splice(indexTodo, 1);
+    setTodos(newTodos);
+  };
 
   // ToDos Restantes
   const leftTodos = todos.filter(todo => !todo.completed).length;
 
   return (
-    <>
-      {/* Header */}
+    <React.Fragment>
       <TodoHeader />
 
-      {/* Add */}
       <TodoAdd />
 
-      {/* List */}
       <TodoList>
-        {/* Item */}
-        {defaultTodos.map(defaultTodo => (
+        {todos.map(createdTodo => (
           <TodoItem
-          text={defaultTodo.text}
-          completed={defaultTodo.completed}
+          key={createdTodo.text}
+          text={createdTodo.text}
+          completed={createdTodo.completed}
+          completedTodo={() => completeTodo(createdTodo.text)}
+          deletedTodo={() => deleteTodo(createdTodo.text)}
           />
         ))}
       </TodoList>
 
-      {/* Filter */}
       <TodoSearch
         leftTodos={leftTodos}
       />
 
-      {/* Footer */}
       <TodoFooter />
-    </>
+    </React.Fragment>
   );
 }
 

@@ -6,6 +6,7 @@
   align-items: center;
   height: 3rem;
   font-size: .75rem;
+  border-radius: 0 0 .25rem .25rem;
 
   & p{
     color: $Grayish-Blue;
@@ -16,7 +17,7 @@
     display: flex;
     justify-content: space-around;
 
-    & > p{
+    & p:nth-child(1){
       color: $Bright-Blue;
     }
   }

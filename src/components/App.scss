@@ -56,11 +56,6 @@ button {
 
 .section {
   background-color: $Very-Dark-Grayish-Blue;
-  border-radius: .25rem;
+  border-radius: .25rem .25rem 0 0;
   // padding: 1rem 0;
-}
-
-.complete{
-  text-decoration: line-through;
-  color: $Grayish-Blue;
 }
