@@ -1,11 +1,17 @@
 import React from "react";
 
-function TodoFilter({ className }){
+function TodoFilter({ className, activeTodos, allTodos, checkTodos }){
   return(
     <div className={className}>
-      <p>All</p>
-      <p>Active</p>
-      <p>Completed</p>
+      <p
+      onClick={allTodos}
+      >All</p>
+      <p
+      onClick={activeTodos}
+      >Active</p>
+      <p
+      onClick={checkTodos}
+      >Completed</p>
     </div>
   )
 };

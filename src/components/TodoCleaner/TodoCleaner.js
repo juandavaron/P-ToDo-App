@@ -1,10 +1,14 @@
 import React from "react";
 
-function TodoCleaner({ className }){
-  return(
-    <p
-    className={className}
-    >Limpiador</p>
+function TodoCleaner({ className, cleanTodos }) {
+  return (
+    <div
+      className={className}
+    >
+      <p
+      onClick={cleanTodos}
+      >Limpiador</p>
+    </div>
   )
 };
 
