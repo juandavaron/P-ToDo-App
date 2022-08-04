@@ -4,22 +4,25 @@ import { TodoCounter } from "../TodoCounter/TodoCounter";
 import { TodoFilter } from "../TodoFilter/TodoFilter";
 import './TodoSearch.scss'
 
-function TodoSearch({ leftTodos, activeTodos, allTodos, checkTodos, cleanTodos }) {
-  return(
+function TodoSearch({
+  todos,
+  setStatus,
+  setTodos
+}) {
+  return (
     <section className="search section">
       <TodoCounter
-      leftTodos={leftTodos}
-      className="search__leftTodos"
+        todos={todos}
+        className="search__leftTodos"
       />
       <TodoFilter
-      className="search__filter"
-      allTodos={allTodos}
-      activeTodos={activeTodos}
-      checkTodos={checkTodos}
+        className="search__filter"
+        setStatus={setStatus}
       />
       <TodoCleaner
-      className="search__cleaner"
-      cleanTodos={cleanTodos}
+        className="search__cleaner"
+        setTodos={setTodos}
+        todos={todos}
       />
     </section>
   )

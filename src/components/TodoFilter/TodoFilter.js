@@ -1,17 +1,28 @@
 import React from "react";
 
-function TodoFilter({ className, activeTodos, allTodos, checkTodos }){
-  return(
-    <div className={className}>
-      <p
-      onClick={allTodos}
-      >All</p>
-      <p
-      onClick={activeTodos}
-      >Active</p>
-      <p
-      onClick={checkTodos}
-      >Completed</p>
+function TodoFilter({
+  className,
+  setStatus,
+}) {
+
+  const filterHandler = (event) => {
+    setStatus(event.target.value);
+  };
+
+  return (
+    <div className={className} onClick={filterHandler}>
+      <button
+        value='all'
+        className={`&{}`}
+      >All</button>
+      <button
+        value='active'
+        className={`&{}`}
+      >Active</button>
+      <button
+        value='completed'
+        className={`&{}`}
+      >Completed</button>
     </div>
   )
 };

@@ -1,13 +1,22 @@
 import React from "react";
 
-function TodoCleaner({ className, cleanTodos }) {
+function TodoCleaner({
+  className,
+  todos,
+  setTodos
+}) {
+
+  const cleanerTodos = () => {
+    setTodos(todos.filter(todo => !todo.completed))
+  }
+
   return (
     <div
       className={className}
     >
-      <p
-      onClick={cleanTodos}
-      >Limpiador</p>
+      <button
+        onClick={cleanerTodos}
+      >Clear Completed</button>
     </div>
   )
 };
