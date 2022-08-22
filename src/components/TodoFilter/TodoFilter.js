@@ -5,6 +5,7 @@ function TodoFilter({
   setStatus,
 }) {
 
+  // Establece status con el valor del boton clickeado.
   const filterHandler = (event) => {
     setStatus(event.target.value);
   };

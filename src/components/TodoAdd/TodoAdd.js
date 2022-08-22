@@ -5,13 +5,13 @@ import './TodoAdd.scss';
 function TodoAdd({ setInputText, inputText, setTodos, todos }) {
   // Input listener
   const inputTextHandler = (event) => {
-    console.log(event.target.value)
     setInputText(event.target.value)
   };
 
   // Agregar ToDos
   const addTodo = (event) => {
-    event.preventDefault();
+    event.preventDefault(); // Previene que se recargue la página.
+
     setTodos([...todos, {text: inputText, completed: false}]);
     setInputText('');
   };
