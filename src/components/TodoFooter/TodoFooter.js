@@ -1,10 +1,10 @@
 import React from "react";
-import './TodoFooter.scss'
+// import './TodoFooter.scss'
 
-function TodoFooter() {
+function TodoFooter({theme}) {
   return (
     <footer className="footer">
-      <p className="footer__text">Hecho con 🧡 por <a href="https://www.linkedin.com/in/juanvarong/">Juan Varón</a></p>
+      <p className={`footer__text ${!theme && 'light'}`}>Hecho con 🧡 por <a target='_blank' href="https://www.linkedin.com/in/juanvarong/">Juan Varón</a></p>
     </footer>
   )
 };

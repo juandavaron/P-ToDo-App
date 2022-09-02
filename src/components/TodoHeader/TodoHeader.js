@@ -1,19 +1,23 @@
 import React from "react";
-import './TodoHeader.scss';
+// import './TodoHeader.scss';
 import { TodoIcon } from '../TodoIcon/TodoIcon'
 
-function TodoHeader() {
+function TodoHeader({
+  setTheme,
+  theme,
+
+}) {
   const toggleTheme = () => {
-    alert('Acabas de cambiar el tema')
+    setTheme(!theme);
   }
 
   return (
     <header className="header">
-      <h1 className="header__title">TODO</h1>
+      <h1 className={`header__title ${!theme && 'light'}`}>TODO</h1>
       <TodoIcon
-        className="header__button"
-        type='lightTheme'
-        theme={toggleTheme}
+        className={`header__button ${!theme && 'light'}`}
+        type={theme ? 'lightTheme' : 'darkTheme'}
+        toggleTheme={toggleTheme}
       />
     </header>
   )

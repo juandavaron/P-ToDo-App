@@ -1,14 +1,15 @@
 import React from "react";
-import './TodoList.scss';
+// import './TodoList.scss';
 import { TodoItem } from "../TodoItem/TodoItem";
 
 function TodoList({
   todos,
   setTodos,
-  todosFilter
+  todosFilter,
+  theme
 }) {
   return(
-    <section className="list section">
+    <section className={`list section ${!theme && 'light'}`}>
       <ul className="list__todo">
         {todosFilter.map(createdTodo => (
           <TodoItem
@@ -17,6 +18,7 @@ function TodoList({
             completed={createdTodo.completed}
             todos={todos}
             setTodos={setTodos}
+            theme={theme}
           />
         ))}
       </ul>

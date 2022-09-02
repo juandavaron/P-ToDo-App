@@ -5,7 +5,7 @@ function TodoFilter({
   setStatus,
 }) {
 
-  // Establece status con el valor del boton clickeado.
+  // Establece status con el valor del botón clickeado.
   const filterHandler = (event) => {
     setStatus(event.target.value);
   };
@@ -14,15 +14,15 @@ function TodoFilter({
     <div className={className} onClick={filterHandler}>
       <button
         value='all'
-        className={`&{}`}
+        // className={`&{}`}
       >All</button>
       <button
         value='active'
-        className={`&{}`}
+        // className={`&{}`}
       >Active</button>
       <button
         value='completed'
-        className={`&{}`}
+        // className={`&{}`}
       >Completed</button>
     </div>
   )

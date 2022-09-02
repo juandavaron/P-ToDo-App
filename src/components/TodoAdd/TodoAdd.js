@@ -1,8 +1,14 @@
 import React from "react";
-import './TodoAdd.scss';
+// import './TodoAdd.scss';
 
 
-function TodoAdd({ setInputText, inputText, setTodos, todos }) {
+function TodoAdd({
+  setInputText,
+  inputText,
+  setTodos,
+  todos,
+  theme
+}) {
   // Input listener
   const inputTextHandler = (event) => {
     setInputText(event.target.value)
@@ -12,12 +18,12 @@ function TodoAdd({ setInputText, inputText, setTodos, todos }) {
   const addTodo = (event) => {
     event.preventDefault(); // Previene que se recargue la página.
 
-    setTodos([...todos, {text: inputText, completed: false}]);
+    setTodos([...todos, { text: inputText, completed: false }]);
     setInputText('');
   };
 
   return (
-    <section className="add section" id="add">
+    <section className={`add section ${!theme && 'light'}`} id="add">
       <form className="add__form">
         <button
           className="add__button"
@@ -25,7 +31,7 @@ function TodoAdd({ setInputText, inputText, setTodos, todos }) {
           onClick={addTodo}
         />
         <input
-          className="add__input"
+          className={`add__input ${!theme && 'light'}`}
           placeholder="Create a new todo..."
           onChange={inputTextHandler}
           value={inputText}

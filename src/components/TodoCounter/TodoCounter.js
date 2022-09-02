@@ -12,7 +12,9 @@ function TodoCounter({
   return (
     <div className={className}>
       <p
-      >{leftTodos} items left</p>
+      >{leftTodos}</p>
+      <p
+      >items left</p>
     </div>
   )
 };

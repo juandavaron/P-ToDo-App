@@ -54,5 +54,9 @@
     color: $Light-Grayish-Blue;
     font-family: $Font-Family;
     font-size: 18px;
+
+    &::placeholder{
+      color: $Grayish-Blue;
+    }
   }
 }

@@ -1,32 +1,39 @@
 import React from "react";
-import { BsSunFill, BsCheck, BsXLg } from 'react-icons/bs';
+import { BsSunFill, BsMoonFill, BsCheck, BsXLg } from 'react-icons/bs';
 
 function TodoIcon({
-  theme,
+  toggleTheme,
   completed,
   completedTodo,
   deletedTodo,
-  type
+  type,
+  className,
+  theme
 }) {
   // Seleccionar el ícono
   const iconTypes = {
     lightTheme: () => (
       <BsSunFill
-        className="header__button-icon"
-        onClick={theme}
+        className={className}
+        onClick={toggleTheme}
       />
     ),
-    darkTheme: 'dark-theme',
+    darkTheme: () => (
+      <BsMoonFill
+        className={className}
+        onClick={toggleTheme}
+      />
+    ),
     add: 'add',
     done: () => (
       <BsCheck
-        className={`list__button-done ${completed && 'complete'}`}
+        className={`list__button-done ${completed && 'complete'} ${!theme && 'light'}`}
         onClick={completedTodo}
       />
     ),
     delete: () => (
       <BsXLg
-        className="list__button-delete"
+        className={`list__button-delete ${!theme && 'light'}`}
         onClick={deletedTodo}
       />
     ),

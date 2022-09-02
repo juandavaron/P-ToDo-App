@@ -2,25 +2,26 @@ import React from "react";
 import { TodoCleaner } from "../TodoCleaner/TodoCleaner";
 import { TodoCounter } from "../TodoCounter/TodoCounter";
 import { TodoFilter } from "../TodoFilter/TodoFilter";
-import './TodoSearch.scss'
+// import './TodoSearch.scss'
 
 function TodoSearch({
   todos,
   setStatus,
-  setTodos
+  setTodos,
+  theme
 }) {
   return (
-    <section className="search section">
+    <section className={`search section ${!theme && 'light'}`}>
       <TodoCounter
         todos={todos}
-        className="search__leftTodos"
+        className={`search__leftTodos`}
       />
       <TodoFilter
-        className="search__filter"
+        className={`search__filter ${!theme && 'light'}`}
         setStatus={setStatus}
       />
       <TodoCleaner
-        className="search__cleaner"
+        className={`search__cleaner ${!theme && 'light'}`}
         setTodos={setTodos}
         todos={todos}
       />

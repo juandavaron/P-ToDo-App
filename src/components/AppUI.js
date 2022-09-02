@@ -11,32 +11,45 @@ function AppUI({
   inputText,
   setInputText,
   setStatus,
-  todosFilter
+  todosFilter,
+  setTheme,
+  theme
 }) {
   return (
     <React.Fragment>
-      <TodoHeader />
-
-      <TodoAdd
-        inputText={inputText}
-        todos={todos}
-        setTodos={setTodos}
-        setInputText={setInputText}
+      <TodoHeader
+        setTheme={setTheme}
+        theme={theme}
       />
+      <main>
+        <TodoAdd
+          inputText={inputText}
+          todos={todos}
+          setTodos={setTodos}
+          setInputText={setInputText}
+          theme={theme}
+        />
 
-      <TodoList
-        todos={todos}
-        setTodos={setTodos}
-        todosFilter={todosFilter}
+        <TodoList
+          todos={todos}
+          setTodos={setTodos}
+          todosFilter={todosFilter}
+          theme={theme}
+        />
+
+        <TodoSearch
+          todos={todos}
+          setStatus={setStatus}
+          setTodos={setTodos}
+          theme={theme}
+        />
+
+      </main>
+
+
+      <TodoFooter
+        theme={theme}
       />
-
-      <TodoSearch
-        todos={todos}
-        setStatus={setStatus}
-        setTodos={setTodos}
-      />
-
-      <TodoFooter />
     </React.Fragment>
   )
 };
