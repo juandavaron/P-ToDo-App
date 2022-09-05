@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/juandavaron/P-ToDo-App.git/static/css/main.027df4fa.css",
-    "main.js": "/juandavaron/P-ToDo-App.git/static/js/main.54c55005.js",
-    "index.html": "/juandavaron/P-ToDo-App.git/index.html",
-    "main.027df4fa.css.map": "/juandavaron/P-ToDo-App.git/static/css/main.027df4fa.css.map",
-    "main.54c55005.js.map": "/juandavaron/P-ToDo-App.git/static/js/main.54c55005.js.map"
+    "main.css": "/P-ToDo-App/static/css/main.027df4fa.css",
+    "main.js": "/P-ToDo-App/static/js/main.54c55005.js",
+    "index.html": "/P-ToDo-App/index.html",
+    "main.027df4fa.css.map": "/P-ToDo-App/static/css/main.027df4fa.css.map",
+    "main.54c55005.js.map": "/P-ToDo-App/static/js/main.54c55005.js.map"
   },
   "entrypoints": [
     "static/css/main.027df4fa.css",
