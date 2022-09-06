@@ -1,18 +1,14 @@
 body.light {
-  transition: .4s;
+  background-image: url($Bg-light-mobile);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
   background-color: white;
+  transition: .4s;
 }
 
 .section.light{
   background-color: $Light-Grayish-Blue-hover;
-}
-
-.header {
-  &__title.light,
-  &__button.light {
-    transition: .4s;
-    color: $Dark-Grayish-Blue;
-  }
 }
 
 .add {

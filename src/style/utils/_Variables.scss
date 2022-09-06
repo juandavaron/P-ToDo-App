@@ -1,4 +1,3 @@
-// Variables
 //  Font
 $Font-Family: 'Josefin Sans', sans-serif;
 $Weight-Regular: 400;
@@ -15,6 +14,12 @@ $Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
 $Grayish-Blue: hsl(234, 11%, 52%);
 $Dark-Grayish-Blue: hsl(233, 14%, 35%);
 $Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+
+// Background
+$Bg-light-mobile: './../../../public/images/bg-mobile-light.jpg';
+$Bg-dark-mobile: './../../../public/images/bg-mobile-dark.jpg';
+$Bg-light-desktop: './../../../public/images/bg-desktop-light.jpg';
+$Bg-dark-desktop: './../../../public/images/bg-desktop-dark.jpg';
 
 // Box Shadow
 $Box-Shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);

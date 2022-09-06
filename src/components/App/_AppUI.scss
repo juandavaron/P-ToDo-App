@@ -1,4 +1,3 @@
-//  Base
 *,
 *::after,
 *::before {
@@ -12,9 +11,14 @@ html {
 }
 
 body {
-  transition: .4s;
+  // min-height: 100vh;
   font-family: $Font-Family;
+  background-image: url($Bg-dark-mobile);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
   background-color: $Very-Dark-Desaturated-Blue;
+  transition: .4s;
   // background: $Very-Dark-Desaturated-Blue url('./../../public/images/bg-mobile-dark.jpg') no-repeat;
   // background-size: cover;
 }

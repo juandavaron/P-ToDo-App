@@ -9,7 +9,7 @@ $breakpoint: (
   @media screen and (max-width: $breakpoint-value) {
     @content
   }
-}
+};
 
 @mixin breakpointMin($size) {
   $breakpoint-value: map-get($breakpoint, $size);
@@ -17,7 +17,9 @@ $breakpoint: (
   @media screen and (min-width: $breakpoint-value) {
     @content
   }
-}
+};
+
+// ====| BREAKPOINT |====
 
 @include breakpointMax(mobile) {
   .search {
@@ -39,8 +41,19 @@ $breakpoint: (
     display: flex;
     justify-content: center;
     align-items: center;
-    // background: $Very-Dark-Desaturated-Blue url('./../../public/images/bg-desktop-dark.jpg') no-repeat;
-    // background-size: cover;
+    background-image: url($Bg-dark-desktop);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+
+    &.light{
+      background-image: url($Bg-light-desktop);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: top;
+      background-color: white;
+      transition: .4s;
+    }
   }
 
   #root {
