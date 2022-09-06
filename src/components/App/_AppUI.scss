@@ -1,0 +1,65 @@
+//  Base
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  transition: .4s;
+  font-family: $Font-Family;
+  background-color: $Very-Dark-Desaturated-Blue;
+  // background: $Very-Dark-Desaturated-Blue url('./../../public/images/bg-mobile-dark.jpg') no-repeat;
+  // background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: $Light-Grayish-Blue;
+
+  &:visited,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+image {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  color: white;
+  font-weight: $Weight-Bold;
+  letter-spacing: .75rem;
+}
+
+p {
+  color: $Light-Grayish-Blue;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+#root {
+  height: auto;
+  margin: 2rem 2rem;
+}
+
+.section {
+  background-color: $Very-Dark-Grayish-Blue;
+  border-radius: .25rem .25rem 0 0;
+}

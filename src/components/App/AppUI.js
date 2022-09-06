@@ -1,9 +1,9 @@
 import React from "react";
-import { TodoHeader } from "./TodoHeader/TodoHeader"
-import { TodoAdd } from "./TodoAdd/TodoAdd";
-import { TodoList } from "./TodoList/TodoList";
-import { TodoSearch } from "./TodoSearch/TodoSearch";
-import { TodoFooter } from "./TodoFooter/TodoFooter";
+import { TodoHeader } from "../TodoHeader/TodoHeader"
+import { TodoAdd } from "../TodoAdd/TodoAdd";
+import { TodoList } from "../TodoList/TodoList";
+import { TodoSearch } from "../TodoSearch/TodoSearch";
+import { TodoFooter } from "../TodoFooter/TodoFooter";
 
 function AppUI({
   todos,

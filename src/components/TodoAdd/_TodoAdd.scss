@@ -1,5 +1,3 @@
-@import '../../index.scss';
-
 .add {
   margin: 1rem 0;
   box-shadow: $Box-Shadow;
@@ -16,7 +14,7 @@
     width: 1rem;
     margin: 1rem 1rem;
 
-    &:hover{
+    &:hover {
       background-image: $Check-Background;
       border: none;
 
@@ -32,17 +30,6 @@
         top: .5px;
       }
     }
-
-    // &:hover::after {
-    //   // outline: 1px solid $Check-Background;
-    //   // background: rgb(192, 88, 249);
-    //   // background: linear-gradient(330deg, rgba(192, 88, 249, 1) 0%, rgba(87, 221, 255, 1) 100%);
-    //   // border-radius: 1rem;
-    //   // border: 5px solid;
-    //   // border-image-slice: 1;
-    //   // border-width: 2px;
-    //   // border-image-source: linear-gradient(330deg, rgba(192, 88, 249, 1) 0%, rgba(87, 221, 255, 1) 100%);
-    // }
   }
 
   &__input {
@@ -55,7 +42,7 @@
     font-family: $Font-Family;
     font-size: 18px;
 
-    &::placeholder{
+    &::placeholder {
       color: $Grayish-Blue;
     }
   }

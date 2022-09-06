@@ -1,5 +1,4 @@
 import React from "react";
-// import './TodoList.scss';
 import { TodoItem } from "../TodoItem/TodoItem";
 
 function TodoList({

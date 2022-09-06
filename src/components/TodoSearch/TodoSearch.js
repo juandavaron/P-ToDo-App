@@ -2,7 +2,6 @@ import React from "react";
 import { TodoCleaner } from "../TodoCleaner/TodoCleaner";
 import { TodoCounter } from "../TodoCounter/TodoCounter";
 import { TodoFilter } from "../TodoFilter/TodoFilter";
-// import './TodoSearch.scss'
 
 function TodoSearch({
   todos,

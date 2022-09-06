@@ -1,5 +1,4 @@
 import React from "react";
-// import './TodoHeader.scss';
 import { TodoIcon } from '../TodoIcon/TodoIcon'
 
 function TodoHeader({

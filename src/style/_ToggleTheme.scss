@@ -1,0 +1,58 @@
+body.light {
+  transition: .4s;
+  background-color: white;
+}
+
+.section.light{
+  background-color: $Light-Grayish-Blue-hover;
+}
+
+.header {
+  &__title.light,
+  &__button.light {
+    transition: .4s;
+    color: $Dark-Grayish-Blue;
+  }
+}
+
+.add {
+  &__input.light{
+    color: $Dark-Grayish-Blue;
+  }
+}
+
+.list{
+  &__button-done.light,
+  &__button-delete.light {
+    transition: .4s;
+    color: $Dark-Grayish-Blue;
+  }
+
+  & p.light {
+    transition: .4s;
+    color: $Dark-Grayish-Blue;
+  }
+
+  &__copy{
+
+    &.complete.light{
+      color: $Light-Grayish-Blue;
+    }
+  }
+}
+
+.search{
+
+  &__filter.light button,
+  &__cleaner.light button{
+
+    &:hover{
+      color: $Dark-Grayish-Blue;
+    }
+  }
+}
+
+.footer__text.light,
+.footer__text.light a{
+  color: $Dark-Grayish-Blue;
+}

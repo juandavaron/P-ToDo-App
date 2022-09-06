@@ -1,0 +1,50 @@
+$breakpoint: (
+  mobile: $Mobile,
+  desktop: $Desktop,
+);
+
+@mixin breakpointMax($size) {
+  $breakpoint-value: map-get($breakpoint, $size);
+
+  @media screen and (max-width: $breakpoint-value) {
+    @content
+  }
+}
+
+@mixin breakpointMin($size) {
+  $breakpoint-value: map-get($breakpoint, $size);
+
+  @media screen and (min-width: $breakpoint-value) {
+    @content
+  }
+}
+
+@include breakpointMax(mobile) {
+  .search {
+
+    & p,
+    & button {
+      color: $Grayish-Blue;
+      font-size: .5rem;
+    }
+
+    &__leftTodos {
+      flex-direction: column;
+    }
+  }
+}
+
+@include breakpointMin(desktop) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background: $Very-Dark-Desaturated-Blue url('./../../public/images/bg-desktop-dark.jpg') no-repeat;
+    // background-size: cover;
+  }
+
+  #root {
+    width: 40.5rem;
+    // margin: auto;
+  }
+}

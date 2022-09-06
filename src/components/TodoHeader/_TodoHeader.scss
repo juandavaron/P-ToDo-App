@@ -1,0 +1,15 @@
+.header {
+  padding: 1rem 0;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__button {
+    height: 1.5rem;
+    width: 1.5rem;
+    color: $Light-Grayish-Blue-hover;
+    cursor: pointer;
+
+  }
+}

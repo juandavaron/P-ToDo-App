@@ -1,5 +1,3 @@
-@import '../../index.scss';
-
 .list {
   box-shadow: $Box-Shadow;
 
@@ -17,42 +15,30 @@
     color: $Light-Grayish-Blue-hover;
   }
 
-  &__button-done{
+  &__button-done {
     height: 1rem;
     width: 1rem;
     border-radius: 1rem;
     outline: 2px solid $Dark-Grayish-Blue;
 
-    &:hover{
+    &:hover {
       background-image: $Check-Background;
       outline: none;
 
-      &::after{
-        content: 'Aquí estoy';
-        height: 5rem;
-        width: 8rem;
-        // border-radius: 1rem;
-        // // background-color: $Very-Dark-Grayish-Blue;
-        background-color: red;
-        display: block;
-        // position: relative;
-        // right: -1.5px;
-        // top: .5px;
-      }
     }
 
-    &.complete{
+    &.complete {
       color: $Light-Grayish-Blue-hover;
       background-image: $Check-Background;
       outline: none;
     }
   }
 
-  &__copy{
+  &__copy {
     width: 80%;
     cursor: pointer;
 
-    &.complete{
+    &.complete {
       text-decoration: line-through;
       color: $Grayish-Blue;
     }

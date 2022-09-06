@@ -1,5 +1,4 @@
 import React from "react";
-// import './TodoFooter.scss'
 
 function TodoFooter({theme}) {
   return (
