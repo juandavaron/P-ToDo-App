@@ -38,6 +38,7 @@ function TodoItem({
       />
       <p
         className={`list__copy ${completed && 'complete'} ${!theme && 'light'}`}
+        onClick={() => completeTodo(text)}
       >{text} </p>
       <TodoIcon
         type={'delete'}

@@ -12,18 +12,21 @@
   &__button-delete {
     cursor: pointer;
     margin: 1rem;
-    color: $Light-Grayish-Blue-hover;
+    color: $Grayish-Blue;
   }
 
   &__button-done {
     height: 1rem;
     width: 1rem;
-    border-radius: 1rem;
+    border-radius: 100%;
     outline: 2px solid $Dark-Grayish-Blue;
+    color: $Very-Dark-Grayish-Blue;
+    transition: .2s;
 
     &:hover {
       background-image: $Check-Background;
       outline: none;
+      color: $Light-Grayish-Blue-hover;
 
     }
 
@@ -31,6 +34,14 @@
       color: $Light-Grayish-Blue-hover;
       background-image: $Check-Background;
       outline: none;
+    }
+  }
+
+  &__button-delete {
+    transition: .2s;
+
+    &:hover{
+      color: $Light-Grayish-Blue-hover;
     }
   }
 
