@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/P-ToDo-App/static/css/main.027df4fa.css",
-    "main.js": "/P-ToDo-App/static/js/main.54c55005.js",
+    "main.css": "/P-ToDo-App/static/css/main.dcb92428.css",
+    "main.js": "/P-ToDo-App/static/js/main.479f4d93.js",
+    "static/media/bg-desktop-light.jpg": "/P-ToDo-App/static/media/bg-desktop-light.3508d620efd5a52bb4ce.jpg",
+    "static/media/bg-desktop-dark.jpg": "/P-ToDo-App/static/media/bg-desktop-dark.73e47dbb723ebc772ef0.jpg",
     "index.html": "/P-ToDo-App/index.html",
-    "main.027df4fa.css.map": "/P-ToDo-App/static/css/main.027df4fa.css.map",
-    "main.54c55005.js.map": "/P-ToDo-App/static/js/main.54c55005.js.map"
+    "main.dcb92428.css.map": "/P-ToDo-App/static/css/main.dcb92428.css.map",
+    "main.479f4d93.js.map": "/P-ToDo-App/static/js/main.479f4d93.js.map"
   },
   "entrypoints": [
-    "static/css/main.027df4fa.css",
-    "static/js/main.54c55005.js"
+    "static/css/main.dcb92428.css",
+    "static/js/main.479f4d93.js"
   ]
 }
