@@ -11,6 +11,7 @@ function AppUI({
   inputText,
   setInputText,
   setStatus,
+  status,
   todosFilter,
   setTheme,
   theme
@@ -40,6 +41,7 @@ function AppUI({
         <TodoSearch
           todos={todos}
           setStatus={setStatus}
+          status={status}
           setTodos={setTodos}
           theme={theme}
         />

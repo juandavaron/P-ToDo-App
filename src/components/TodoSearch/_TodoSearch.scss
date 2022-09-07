@@ -22,12 +22,6 @@
     gap: .25rem;
   }
 
-  &__filter {
-    width: 40%;
-    display: flex;
-    justify-content: space-around;
-  }
-
   &__filter button,
   &__cleaner button {
 
@@ -35,6 +29,16 @@
       transition: .3s;
       color: $Light-Grayish-Blue-hover;
       cursor: pointer;
+    }
+  }
+
+  &__filter {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+
+    &.active{
+      color: $Bright-Blue;
     }
   }
 }

@@ -20,8 +20,25 @@ body.light {
 .list{
   &__button-done.light,
   &__button-delete.light {
-    transition: .4s;
+    transition: .2s;
     color: $Dark-Grayish-Blue;
+  }
+
+  &__button-done.light {
+    color: $Light-Grayish-Blue-hover;
+
+    &:hover{
+      background-image: $Check-Background;
+      outline: none;
+    }
+  }
+
+  &__button-delete.light {
+    color: $Grayish-Blue;
+
+    &:hover {
+      color: $Dark-Grayish-Blue;
+    }
   }
 
   & p.light {

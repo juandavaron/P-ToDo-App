@@ -82,6 +82,7 @@ function App() {
       inputText={inputText}
       setInputText={setInputText}
       setStatus={setStatus}
+      status={status}
       todosFilter={todosFilter}
       setTheme={setTheme}
       theme={theme}

@@ -6,6 +6,7 @@ import { TodoFilter } from "../TodoFilter/TodoFilter";
 function TodoSearch({
   todos,
   setStatus,
+  status,
   setTodos,
   theme
 }) {
@@ -18,6 +19,7 @@ function TodoSearch({
       <TodoFilter
         className={`search__filter ${!theme && 'light'}`}
         setStatus={setStatus}
+        status={status}
       />
       <TodoCleaner
         className={`search__cleaner ${!theme && 'light'}`}
