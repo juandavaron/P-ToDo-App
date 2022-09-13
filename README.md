@@ -19,7 +19,6 @@
 <h3 align="center">ToDo's App</h3>
 
   <p align="center">
-    project_description
     <br />
     <a href="https://github.com/juandavaron/P-ToDo-App"><strong>Explore the docs »</strong></a>
     <br />
@@ -52,22 +51,20 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
 
-
+---
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
 [![Todo App][product-screenshot]](./public/images/active-states-dark.jpg)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+This is a task and list app that will help you with your daily organization of your life. Use this app to create shopping lists, to-do lists, take notes or plan to increase your productivity.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -75,7 +72,8 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-[![React][React.js]][React-url]
+- [![React][React.js]][React-url]
+- [![Sass][Sass]][Sass-url]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -84,8 +82,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
@@ -151,23 +148,12 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+- **To add ToDos**: Type in the bar and press enter or click on the circle on the left.
+- **To complete ToDos**: Click on the circle on the left where the ToDo to complete is located or click on the name of the ToDo.
+- **To delete a ToDo**: Click on the x to the right of the ToDo to delete.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+This App has three filters located at the bottom. Clicking on each will filter between ToDos On, ToDos Incomplete, and All ToDos.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/juandavaron/P-ToDo-App/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -225,9 +211,7 @@ Project Link: [https://github.com/juandavaron/P-ToDo-App](https://github.com/jua
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+<!-- Links -->
 [contributors-shield]: https://img.shields.io/github/contributors/juandavaron/P-ToDo-App.svg?style=for-the-badge
 [contributors-url]: https://github.com/juandavaron/P-ToDo-App/graphs/contributors
 
@@ -251,3 +235,6 @@ Project Link: [https://github.com/juandavaron/P-ToDo-App](https://github.com/jua
 
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
+
+[Sass]: https://img.shields.io/badge/Sass-cc6699?style=for-the-badge&logo=sass&logoColor=white
+[Sass-url]: https://sass-lang.com/
